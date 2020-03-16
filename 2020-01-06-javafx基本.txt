@@ -1,0 +1,50 @@
+---
+layout:     post                    # 使用的布局（不需要改）
+title:      javaFX               # 标题 
+subtitle:   javaFX 笔记 #副标题
+date:       2020-01-06              # 时间
+author:     Delier                      # 作者
+header-img: img/post-bg-2015.jpg    #这篇文章标题背景图片
+catalog: true                       # 是否归档
+tags:                               #标签
+    - 学习
+    - java
+    - javaFX
+---
+
+## javaFX
+>javafx8技术手册
+
+通过Javafx开发的应用程序，可以同时以java applet，Java Web start与视窗应用程序的执行
+
+## javaFX程序构架
+开发JavaFX程序需要继承javafx.application.Application抽象类
+其生命的周期为：
+init()：为初始化javafx应用程序
+start()：为Javafx应用程序的进入点，在此为Java applet
+launch()：启动独立的Javafx应用程序，在此为窗口
+stop()：当Javafx应用程序结束之前，将执行stop方法
+程序架构如下：
+`
+public class JavaFXHelloworld extends Application{
+public void start(Stage primaryStage){
+...
+}
+public static void main(String[] args){
+launch(args);
+}
+}
+`
+javafx以树状架构的方式祝贺物件，节点称为node，节点分为以下三类
+1. Root：最上层的容器
+2. Parent：放置物件的容器
+3. Leaf：容器中的物件
+
+其中javafx。stage。Stage类别为javafx最上层的容器，用以放置Scene或SubScene物件。Javafx.scene.Scene类别则是javafxScene Graph，可以绘图和配置各种gui物件
+
+Javafx会自动处理部分窗口事件
+Javafx支持主题,使用setUserAgentStylesheet();
+
+javafx与Java Swing可以互通，可以在java Swing中使用javafx，彼此之间可以使用javafx.embed.swing.JFXPanel类所建立的javafx panel处理，JFXPanel类继承自java Swing的Jcomponent抽象类。之后还需要javafx.application.Platform的runlater()方法来执行javafx panel，才能在java Swing中正常处理javafx。
+
+javafx也可与SWT互通
