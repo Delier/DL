@@ -1,2 +1,3 @@
 创建分支：git checkout -b dev
-拉取分支：git pull
+拉取分支：git pull origin dev
+
