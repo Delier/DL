@@ -1,3 +1,5 @@
-创建分支：git checkout -b dev
-拉取分支：git pull origin dev
+克隆仓库：git clone [url]
+克隆远程仓库并且定义自己本地仓库的名字：git clone [url] [自定义的仓库名称]
+创建分支：git checkout -b [分支名称]
+拉取分支：git pull origin [分支名称] 
 
