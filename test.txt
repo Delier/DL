@@ -7,6 +7,15 @@ add将文件放入暂存区
 克隆仓库：git clone [url]
 克隆远程仓库并且定义自己本地仓库的名字：git clone [url] [自定义的仓库名称]
 创建分支：git checkout -b [分支名称]
-拉取分支：git pull origin [分支名称] 
 查看提交历史：git log
+
+
+查看所有远程仓库：git remote
+添加远程仓库：git remote add [自定义远程仓库的简写] [url]
+拉取分支：git pull origin [分支名]
+推送到远程仓库：git push origin [分支名]
+查看某个远程仓库：git remote show [仓库]
+远程仓库的重命名:git remote rename [旧名称] [新名称]
+远程仓库的移除:git remote rm [仓库]
+
 
