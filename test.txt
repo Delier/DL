@@ -1,3 +1,8 @@
+在现有项目种初始化仓库：git init
+初次克隆仓库，工作目录的所有文件都属于已跟踪文件
+add将文件放入暂存区
+查看已暂存和未暂存的修改：git diff
+查看已暂存将要添加到下次提交的内容：git diff --staged
 克隆仓库：git clone [url]
 克隆远程仓库并且定义自己本地仓库的名字：git clone [url] [自定义的仓库名称]
 创建分支：git checkout -b [分支名称]
