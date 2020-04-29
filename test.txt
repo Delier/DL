@@ -3,6 +3,7 @@
 add将文件放入暂存区
 查看已暂存和未暂存的修改：git diff
 查看已暂存将要添加到下次提交的内容：git diff --staged
+移除文件是移除暂存区的文件：git rm [要移除的文件名]
 克隆仓库：git clone [url]
 克隆远程仓库并且定义自己本地仓库的名字：git clone [url] [自定义的仓库名称]
 创建分支：git checkout -b [分支名称]
