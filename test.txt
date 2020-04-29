@@ -6,6 +6,8 @@ add将文件放入暂存区
 移除文件是移除暂存区的文件：git rm [要移除的文件名]
 克隆仓库：git clone [url]
 克隆远程仓库并且定义自己本地仓库的名字：git clone [url] [自定义的仓库名称]
+取消暂存的文件:git reset HEAD [取消暂存的文件名]
+撤销对文件的修改:git checkout -- [文件] 会还原成上次提交时的样子
 创建分支：git checkout -b [分支名称]
 查看提交历史：git log
 
