@@ -21,3 +21,16 @@ add将文件放入暂存区
 远程仓库的移除:git remote rm [仓库]
 
 
+打标签
+
+git分支
+创建分支：git branch [分支]
+切换分支：git checkout [分支]
+新建分支切换并切换：git checkout -b [分支]
+合并dev分支：git checkout master 
+             git merge dev
+删除分支：git branch -d [分支]
+分支列表:git branch
+
+
+远程分支
