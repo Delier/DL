@@ -9,6 +9,28 @@ add将文件放入暂存区
 取消暂存的文件:git reset HEAD [取消暂存的文件名]
 撤销对文件的修改:git checkout -- [文件] 会还原成上次提交时的样子
 创建分支：git checkout -b [分支名称]
-拉取分支：git pull origin [分支名称] 
 查看提交历史：git log
 
+
+查看所有远程仓库：git remote
+添加远程仓库：git remote add [自定义远程仓库的简写] [url]
+拉取分支：git pull origin [分支名]
+推送到远程仓库：git push origin [分支名]
+查看某个远程仓库：git remote show [仓库]
+远程仓库的重命名:git remote rename [旧名称] [新名称]
+远程仓库的移除:git remote rm [仓库]
+
+
+打标签
+
+git分支
+创建分支：git branch [分支]
+切换分支：git checkout [分支]
+新建分支切换并切换：git checkout -b [分支]
+合并dev分支：git checkout master 
+             git merge dev
+删除分支：git branch -d [分支]
+分支列表:git branch
+
+
+远程分支
